@@ -29,6 +29,15 @@ exports.resolve = function(identifier,accept) {
         "publicKeyBase58": "EKmHWjiDDeMhEBs75uv86dC89zZ6yTTxEAHkYroJ7wZP"
       } ]
     };
+    examples['did:covid19:qwertyuiop'] = {
+      "@context": "https://www.w3.org/2019/did/v1",
+      "id" : "did:covid19:qwertyuiop",
+      "publicKey" : [ {
+        "id" : "did:covid19:qwertyuiop",
+        "type" : "noneofyourbusiness",
+        "publicKeyBase58": "yesitismybusiness"
+      } ]
+    };
     var found = examples[identifier];
     if (found) {
       resolve(found);
